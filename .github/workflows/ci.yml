@@ -26,7 +26,7 @@ jobs:
       - uses: actions/checkout@v3
 
       # 
-      - name: Run markdown lint
+      - name: Run markdown lint ${{ inpus.deploy_target }} by ${{ github.actor }}
         run: |
           npm intall remark-cli remark-present-lint-consistent
           npx remark . --use remark-present-consistent --frail
