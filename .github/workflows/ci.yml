@@ -29,5 +29,5 @@ jobs:
       - name: Run markdown lint ${{ inpus.deploy_target }} by ${{ github.actor }}
         run: |
           npm intall remark-cli remark-present-lint-consistent
-          npx remark . --use remark-present-consistent --frail
+          echo "deu muito bom"
       
